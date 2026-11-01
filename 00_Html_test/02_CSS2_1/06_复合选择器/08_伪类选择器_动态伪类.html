@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器_动态伪类</title>
+    <style>
+        /* 什么是伪类?--很像类,但不是类,是元素特殊状态的一种描述 */
+
+        /* link和visited是a元素特有的状态 */
+        /* 选中的是没有访问过的a元素 */
+        a:link{
+            color: orange;
+        }
+        /* 选中的是被访问过的a元素 */
+        a:visited{
+            color:red;
+        }
+
+        /* hover和active是所有元素都适合的状态 */
+        /* 选中的是鼠标悬浮的a,p元素 */
+        a,
+        p:hover{
+            color:blue
+        }
+        /* 选中的是激活状态的a,p元素 */
+        a,
+        p:active{
+            color:green
+        }
+
+        /* focus是表单元素特有的 */
+        input:focus{
+            color:blue;
+            background-color: green;
+        }
+        select:focus{
+            color: blue;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- a的link visited hover active伪类 -->
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com">去京东</a>
+    <!-- p的hover active伪类 -->
+    <p>尚硅谷</p>
+    <!-- 表单元素特有的focus伪类 -->
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <select>
+        <option value="京">北京</option>
+        <option value="沪">上海</option>
+    </select>
+</body>
+</html>

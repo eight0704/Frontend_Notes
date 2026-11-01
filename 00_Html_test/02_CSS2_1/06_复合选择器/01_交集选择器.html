@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交集选择器</title>
+    <style>
+        .stage1{
+            color: blue;
+            font-size: 20px;
+        }
+        .stage2{
+            color: chocolate;
+            font-size: 20px;
+        }
+        .stage1.stage2{
+            color: blueviolet;
+            font-size: 40px;
+        }
+        h2.stage1{
+            color:aqua;
+            font-size: 40px;
+        }
+        h2.stage#S1
+        {
+            color: black;
+        }
+        #S1{
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>洛克王国</h1>
+    <p>梦想起点</p>
+    <h2 class="stage1">赛季</h2>
+    <p class="stage1" id="S1">暗夜拾光</p>
+    <p class="stage1">怪诞狂欢</p>
+    <p class="stage1 stage2">过渡赛季</p>
+    <p class="stage2">铅绘童话</p>
+    <p class="stage2">月咏狂想</p>
+    <br>
+    <hr>
+    <h2>图鉴</h2>
+    <p class="pet">火花</p>
+    <p class="pet">水蓝蓝</p>
+    <p class="pet">喵喵</p>
+
+</body>
+</html>

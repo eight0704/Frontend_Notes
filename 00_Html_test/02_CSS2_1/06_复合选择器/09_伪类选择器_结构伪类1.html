@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器_结构伪类1</title>
+    <style>
+        /* 结构1--选中的是div的第一个儿子p元素(按照div所有儿子计算的) */
+        /* div>p:first-child{
+            color: green;
+        } */
+
+        /* 结构2--选中的是div的第一个儿子p元素(按照div所有儿子计算的) */
+        /* div>p:first-child{
+            color: green;
+        } */
+
+        /* 结构3--选中的是div的后代p元素(p的父级是谁无所谓,但p必须是其父级的第一个儿子) */
+        /* div p:first-child{
+            color: green;
+        } */
+
+        /* 结构4--选中的是p元素(p的父级是谁无所谓,但p必须是其父级的第一个儿子) */
+        /* p:first-child{
+            color: green;
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>S1</p>
+        <p>S2</p>
+        <p>S3</p>
+        <p>S4</p>
+    </div> -->
+
+    <!-- 结构2 -->
+    <!-- <div>
+        <span>S1</span>    //第一个儿子但不是p元素
+        <p>S2</p>
+        <p>S3</p>
+        <p>S4</p>
+     </div> -->
+    
+    <!-- 结构3 -->
+    <!-- <p>测试1</p>
+    <div>
+        <p>测试2</p>       //第一层后代
+        <marquee>
+            <p>测试3</p>   //第二层后代
+            <p>S1</p>
+        </marquee>
+        <p>S2</p>
+        <p>S3</p>
+        <p>S4</p>
+    </div> -->
+
+    <!-- 结构4 -->
+    <!-- <p>测试1</p>           //body的第一个儿子
+    <div>          
+        <p>测试2</p>       //div的第一个儿子 
+        <marquee>
+            <p>测试3</p>   //marquee的第一个儿子
+            <p>S1</p>
+        </marquee>
+        <p>S2</p>
+        <p>S3</p>
+        <p>S4</p>
+    </div> -->
+
+
+</body>
+</html>

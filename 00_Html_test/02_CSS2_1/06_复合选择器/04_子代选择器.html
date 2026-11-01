@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        div a{
+            color: red;
+        }
+        div > a{
+            color: blue;
+        }
+        .stage>a{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>洛克王国</h1><p>梦想起点</p>
+    <h2>赛季</h2>
+    <div>
+        <a href="#">S1</a>
+        <a href="#">S2</a>
+        <a href="#">S3</a>
+        <a href="#">S4</a>
+        <p><a href="#">赛季结束</a></p>
+        <div class="stage">
+            <a href="#">新赛季</a>
+        </div>
+    </div>
+
+    <h2>图鉴</h2>
+    <p class="pet">火花</p>
+    <p class="pet">水蓝蓝</p>
+    <p class="pet">喵喵</p>
+
+</body>
+</html>

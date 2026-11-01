@@ -1,0 +1,15 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.encoding": "utf8",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  "pasteImage.path": "${currentFileDir}/images",
+  "pasteImage.defaultName": "Y-MM-DD-HHmmss",
+  "pasteImage.forceUnixStyleSeparator": true,
+  "markdown.preview.fontSize": 15,
+  "markdown.preview.lineHeight": 1.6,
+  "git.autofetch": true,
+  "git.confirmSync": false
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>15_伪类选择器_语言伪类</title>
+  <style>
+    div:lang(en) {
+      color: red;
+    }
+    :lang(zh-CN) {
+      color: green;
+    }
+
+    /* 补充说明：<html lang="zh-CN"> 会把中文语言环境继承给所有元素，因此 :lang(zh-CN) 能匹配整页内容并显示为绿色；而 <div lang="en"> 单独声明了英文，正好被 div:lang(en) 选中，因此显示为红色。两条规则竞争时，div:lang(en) 的选择器更具体，优先级更高。 */
+  </style>
+</head>
+<body>
+  <div>尚硅谷1</div>
+  <div lang="en">尚硅谷2</div>
+  <p>前端</p>
+  <span>你好</span>
+</body>
+</html>

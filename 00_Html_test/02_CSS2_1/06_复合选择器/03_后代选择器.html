@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        ol li{
+            color: blue;
+        }
+        ul li{
+            color: aquamarine;
+        }
+        ol li div{
+            color: red;
+        }
+        ul li div{
+            color: black;
+        }
+        .subject li{
+            color: yellow;
+        }
+        .subject li.front-end{
+            color: orchid;
+        }
+        .subject div.front-end{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="rock">洛克王国</h1>
+    <p id="dream">梦想起点</p>
+    <h2>赛季</h2>
+    <ol>
+        <li>暗夜拾光</li>
+        <li>怪诞狂欢</li>
+        <li>铅绘童话</li>
+        <li>月咏狂想</li>
+        <li>
+            <div>赛季末</div>
+        </li>
+    </ol>
+    <br>
+    <hr>
+    <h2>御三家</h2>
+    <ul>
+        <li>火花</li>
+        <li>水蓝蓝</li>
+        <li>喵喵</li>
+        <li>
+            <div>图鉴末</div>
+        </li>
+    </ul>
+    <hr>
+    <ol class="subject">
+        <li class="front-end">前端</li>
+        <div class="front-end">学科介绍:前端nb</div>
+        <li>java</li>
+        <li>大数据</li>
+        <li>UI</li>
+    </ol>
+    
+
+
+
+</body>
+</html>

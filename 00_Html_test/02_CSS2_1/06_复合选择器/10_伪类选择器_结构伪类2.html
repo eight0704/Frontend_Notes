@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器_结构伪类2</title>
+    <style>
+        /* 结构1--选中的是div的第一个儿子p元素(按照div所有儿子计算的) */
+        /* div>p:first-child{
+            color: green;
+        } */
+         
+        /* 结构1--选中的是div的最后一个儿子p元素(按照div所有儿子计算的) */
+        /* div>p:last-child{
+            color: green;
+        } */
+
+        /* 结构1--选中的是div的第n个儿子p元素(按照div所有儿子计算的) */
+        /* div>p:nth-child(3){
+            color: green;
+        } */
+        
+        /* 结构2--选中的是div的偶数个儿子p元素(按照div所有儿子计算的) */
+        /* 关于n的值：
+            1. 0或不写：什么都选不中 — 几乎不用。
+            2. n  ：选中所有子元素 — 几乎不用。
+            3. 1 ~ 正无穷的整数，选中对应序号的子元素。
+            4. 2n 或 even  ：选中序号为偶数的子元素。
+            5. 2n+1 或 odd ：选中序号为奇数的子元素。
+            6. -n+3 ：选中前三个。  遵循an+b的格式
+        */ 
+        /* div>p:nth-child(2n){
+            color: green;
+        }      */
+
+        /* 结构3--选中的是div的第一个儿子p元素(按照div所有p类型儿子计算的) */
+        /* div>p:first-of-type{
+            color: green;
+        } */
+
+        /* 结构3--选中的是div的最后一个儿子p元素(按照div所有p类型儿子计算的) */
+        /* div>p:last-of-type{
+            color: green;
+        } */
+
+        /* 结构3--选中的是div的第n个儿子p元素(按照div所有p类型儿子计算的) */
+        /* div>p:nth-of-type(6){
+            color: green;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+     <!-- <div>
+        <p>S1</p>
+        <p>S2</p>
+        <p>S3</p>
+        <p>S4</p>
+        <p>S5</p>
+        <p>S6</p>
+     </div> -->
+    
+     <!-- 结构2 -->
+    <!-- <div>
+        <p>S1</p>
+        <p>S2</p>
+        <p>S3</p>
+        <p>S4</p>
+        <p>S5</p>
+        <p>S6</p>
+        <p>S7</p>
+        <p>S8</p>
+        <p>S9</p>
+        <p>S10</p>
+    </div> -->
+
+    <!-- 结构3 -->
+    <div>
+        <span>测试1</span>
+        <p>S1</p>
+        <p>S2</p>
+        <p>S3</p>
+        <p>S4</p>
+        <span>测试2</span>
+        <p>S5</p>
+        <p>S6</p>
+        <p>S7</p>
+        <p>S8</p>
+        <span>测试3</span>
+     </div>
+
+</body>
+</html>

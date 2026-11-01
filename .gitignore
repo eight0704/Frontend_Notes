@@ -1,0 +1,28 @@
+# ===== 系统生成文件 =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ===== Office 临时文件 =====
+~$*
+
+# ===== 敏感信息，绝对不要提交 =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# ===== 临时文件和日志 =====
+*.tmp
+*.log
+
+# ===== VS Code 本地文件，但保留项目设置 =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.zip

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素与行内元素</title>
+</head>
+<body>
+    <!--块级元素 特点：独占一行-->
+    <!-- <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+    <div>
+        <p>一个段落</p>
+        <p>一个段落</p>
+        <p>一个段落</p>
+    </div> -->
+
+    <!--行内元素 特点：不独占一行-->
+    <!-- <input type="text">
+
+    <input type="text">
+    <span>洛克王国</span>
+    <span>洛克王国</span> -->
+<!-- 规则1：块级元素中能写：行内元素、块级元素（几乎什么都能写） -->
+ <!-- <div>
+    <span>洛克王国</span>
+    <input type="text">
+    <div>洛克王国</div>
+ </div> -->
+ 
+<!-- 规则2：行内元素中能写：行内元素，但不能写：块级元素 -->
+<!--如果使用会发生错乱-->
+<!-- <span>
+    <span>洛克王国</span>
+    <input type="text">
+    <span>洛克王国</span>
+</span> -->
+
+<!-- 特殊规则：h1-h6不能互相嵌套 -->
+<!--如果使用浏览器会自动给你分开-->
+<!-- <h1>
+    洛克王国1
+    <h2>洛克王国2</h2>
+ </h1> -->
+
+<!--特殊规则：p标签中不能写块元素-->
+<!--如果使用浏览器会自动给你分开-->
+<!-- <p>
+    <marquee>洛克王国</marquee>
+</p> -->
+
+</body>
+</html>
