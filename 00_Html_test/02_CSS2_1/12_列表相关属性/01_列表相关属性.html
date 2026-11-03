@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表相关属性</title>
+    <style>
+        li{
+            background-color: skyblue;
+        }
+        ul{
+            /* 列表符号 */
+            list-style-type: square;
+            /* 列表符号的位置 */
+            list-style-position: outside;
+            /* 自定义列表符号 */
+            /* list-style-image: url(图片链接); */
+            /* 复合属性 */
+            list-style: square outside url();
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>javascript</li>
+    </ul>
+</body>
+</html>
