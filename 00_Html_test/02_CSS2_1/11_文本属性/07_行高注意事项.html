@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高注意事项</title>
+    <style>
+        /* 行高过小:文字重叠,最小值为0px */
+        #d1{
+            font-size: 40px;
+            background-color: red;
+            line-height: 0px;
+        }
+        /* 行高是可以继承的 */
+        #d2{
+            font-size: 40px;
+            background-color: red;
+            line-height: 1.5;
+        }
+        span{
+            font-size: 80px;
+        }
+        /* 
+        设置了height,div高度就是height
+        没有设置height,div的高度就是line-height*行数 
+        */
+        #d3{
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 40px;
+            height:200px ;
+        }
+        #d4{
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 40px;
+        }
+        /* 应用场景1:调整多行文字的间距 */
+        #d5{
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 100px;
+        }
+        /* 应用场景2:实现单行文字垂直居中 */
+        #d6{
+            font-size: 40px;
+            background-color: skyblue;
+            height:300px;
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!</div>
+    <br>
+    <br>
+    <div id="d2">世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的<span>span技术</span>!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!</div>
+    <br>
+    <div id="d3">世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!</div>
+    <br>
+    <div id="d4">世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!</div>
+    <br>
+    <div id="d5">世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!世上没有难学的技术!</div>
+    <br>
+    <div id="d6">世上没有难学的技术!</div>
+    <br>
+</body>
+</html>
