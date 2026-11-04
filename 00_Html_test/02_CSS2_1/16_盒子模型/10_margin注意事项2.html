@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin注意事项2</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: green;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .box3{
+            background-color: blue;
+        }
+        .second{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 注意事项2:上,左的magin会影响自身的位置,下,右的magin会影响兄弟元素的位置 -->
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <hr>
+    <img src="../images/IU_50px.jpg" alt="iu照片"><img src="../images/IU_50px.jpg" class="second" alt="iu照片"><img src="../images/IU_50px.jpg" alt="iu照片">
+</body>
+</html>

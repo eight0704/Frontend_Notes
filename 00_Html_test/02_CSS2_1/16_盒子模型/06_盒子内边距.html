@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子内边距</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+
+            /* 上内边距 */
+            padding-top: 10px;
+
+            /* 右侧内边距 */
+            padding-right: 20px;
+
+            /* 底内边距 */
+            padding-bottom: 30px;
+            
+            /* 左侧内边距 */
+            padding-left: 40px;
+
+            /* 复合属性,写一个值,含义:四个方向的内边距是一样的 */
+            padding: 20px;
+
+            /* 复合属性,写两个值,含义:上下,左右 */
+            padding: 10px 20px;
+
+            /* 复合属性,写三个值,含义:上,左右,下 */
+            padding: 10px 20px 30px;
+
+            /* 复合属性,写三个值,含义:上,右,下,左 */
+            padding: 10px 20px 30px 40px;
+
+        } 
+        #span1{
+            background-color: red;
+            padding: 50px;
+        }
+        img{
+            padding: 100px;
+        }
+        #span2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        你好呀
+    </div>
+    <span id="span1">你好呀</span>
+    <br>
+    <img src="../images/新专照片.jpg" alt="照片">
+    <br>
+    <span id="span2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, est!</span>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景相关属性</title>
+    <style>
+        div{
+            width: 1600px;
+            height: 1600px;
+            border: 5px black solid;
+            font-size: 40px;
+            /* 设置背景颜色,默认值是transparent 透明色*/
+            background-color: transparent;
+            background-color: skyblue;
+            /* 设置图片背景 */
+            background-image: url(../images/新专照片.jpg);
+            /* 设置背景图片的重复方式 */
+            background-repeat: no-repeat;
+            /* 控制背景图片的位置,第一种写法:用关键词 */
+            background-position:  right center;
+            /* 控制背景图片的位置,第二种写法:用具体的像素值 */
+            background-position: 300px 1200px;
+            /* 复合属性 */
+            background: url(../images/新专照片.jpg) no-repeat 300px 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div>你好呀!!!</div>
+</body>
+</html>

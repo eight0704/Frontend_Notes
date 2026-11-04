@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS常用的长度单位</title>
+    <style>
+        html{
+            font-size: 40px;
+        }
+        /* 第一种单位长度:px */
+        #d1{
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: red;
+        }
+        /* 第二种单位长度:em(相对于当前元素或者其父元素的font-size的倍数) */
+        #d2{
+            width: 10em;
+            height: 10em;
+            font-size: 20px;
+            background-color: green;
+        }
+        /* 第三种单位长度:rem(相对于根元素(html)的font-size的倍数) */
+        #d3{
+            width: 5rem;
+            height: 5rem;
+            font-size: 20px;
+            background-color: blue;
+        }
+        /* 第三种单位长度:%(相对于父元素的百分比) */
+        #d4{
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: skyblue;
+        }
+        .inside{
+            width: 50%;
+            height: 25%;
+            font-size: 150%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+    <div id="d4">
+        <div class="inside">4</div>
+    </div>
+</body>
+</html>
