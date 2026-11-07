@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素之间的空白问题</title>
+    <style>
+        body{
+            /* 解决方法:给body设置font-size为0px */
+            /* font-size: 0px; */
+        }
+        img{
+            width: 100px;
+        }
+        span{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 问题:文字,图片之间有空白距离,换行造成的 -->
+    <div>
+        <span>S1赛季</span>
+        <span>S2赛季</span>
+        <span>S3赛季</span>
+    </div>
+    <img src="../images/IU_50px.jpg" alt="">
+    <img src="../images/IU_50px.jpg" alt="">
+    <img src="../images/IU_50px.jpg" alt="">
+</body>
+</html>

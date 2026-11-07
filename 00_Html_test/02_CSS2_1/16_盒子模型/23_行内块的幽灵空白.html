@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内块的幽灵空白问题</title>
+    <style>
+        div{
+            width: 600px;
+            background-color: skyblue;
+            /* 解决方法3:将字体设置为0px */
+            /* font-size: 0px; */
+        }
+        img{
+            height: 200px;
+            /* 解决方法1前提:有文字,vertical-align只能用于行内元素/行内块元素 */
+            /* vertical-align: bottom; */
+            /* 解决方法2前提:没有文字,直接设置成块级元素 */
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 问题:图片/文字与下边会有一段空白 -->
+        <img src="../images/新专照片.jpg" alt=""><span>会有一段空白</span>
+    </div>
+</body>
+</html>

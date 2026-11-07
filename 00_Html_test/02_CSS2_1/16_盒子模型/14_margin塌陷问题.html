@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin塌陷问题</title>
+    <style>
+        .outer{
+            width: 400px;
+            background-color: red;
+            /*解决方法1  */
+            /* border: 10px black solid; */
+            /*解决方法2  */
+            /* padding: 10px; */
+            /*解决方法3  */
+            /* overflow: hidden; */
+        }
+        .inner1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /* 塌陷问题:把inner的margin-top给outer */
+            margin-top: 50px;
+        }
+        .inner2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 塌陷问题:把inner的margin-bottom给outer */
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1">inner1</div>
+        <div class="inner2">inner2</div>
+    </div>
+    <div>我是一段测试代码</div>
+</body>
+</html>
