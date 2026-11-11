@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动后的影响</title>
+    <style>
+        .outer{
+            width: 500px;
+            height: 120px;
+            background-color: red;
+            border: 1px solid black;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .box1,.box2,.box3{
+            float: left;
+        }
+        .box4{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box0">盒子0</div>
+        <div class="box box1">盒子1</div>
+        <div class="box box2">盒子2</div>
+        <div class="box box3">盒子3</div>
+        <div class="box box4">盒子4</div>
+    </div>
+</body>
+</html>

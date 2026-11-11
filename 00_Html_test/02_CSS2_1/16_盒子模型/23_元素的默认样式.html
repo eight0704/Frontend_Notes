@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的默认样式</title>
+    <style>
+        body{
+            text-decoration: none;
+            color: red;
+            cursor:alias;
+        }
+        .a1{
+            text-decoration: overline;
+            font-size: 30px;
+            color: orange;
+            cursor:default;
+        }
+    </style>
+</head>
+<body>
+    <!-- 默认样式优先级大于继承样式 -->
+    <a href="https://www.baidu.com/" target="_blank">去百度</a>
+    <a href="https://www.baidu.com/" target="_blank" class="a1">去百度</a>
+</body>
+</html>

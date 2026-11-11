@@ -11,5 +11,6 @@
   "markdown.preview.fontSize": 15,
   "markdown.preview.lineHeight": 1.6,
   "git.autofetch": true,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "liveServer.settings.port": 5501
 }

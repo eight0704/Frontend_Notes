@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解决浮动后的影响</title>
+    <style>
+        .outer{
+            width: 500px;
+            background-color: plum;
+            border: 1px solid black;
+            /* 解决方案1: */
+            /* height: 122px; */
+            /* 解决方案2: */
+            /* float: left; */
+            /* 解决方案3: */
+            /* overflow: hidden; */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .box1,.box2,.box3,.box4{
+            float: left;
+        }
+        /* 解决方案4:可以解决父元素高度塌陷,不浮动的兄弟元素占据之前的位置*/
+        /* 前提:需要在不浮动兄弟前面加空标签  */
+        /* .answer{
+            clear: both;
+        } */
+        /* 解决方案5:可以解决父元素高度塌陷 */
+        /* .outer{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+        .outer::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">盒子1</div>
+        <div class="box box2 ">盒子2</div>
+        <div class="box box3 ">盒子3</div>
+        <!-- <div class="answer"></div> -->
+        <div class="box box4 ">盒子4</div>
+    </div>
+</body>
+</html>
