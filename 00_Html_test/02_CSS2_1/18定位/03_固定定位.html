@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        .outer{
+            width: 500px;
+            height: 1000px;
+            padding: 50px;
+            margin-left:50px ;
+            background-color: skyblue;
+            border: 1px solid #000;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: green;
+            position: fixed;
+            bottom:0px;
+            right:0px
+        }
+        .box3{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <span class="box box2">广告位</span>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>

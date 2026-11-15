@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊应用2</title>
+    <style>
+        .outer{
+            height: 600px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 方案1 推荐*/
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /* 方案2 */
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">内部字体</div>
+    </div>
+</body>
+</html>

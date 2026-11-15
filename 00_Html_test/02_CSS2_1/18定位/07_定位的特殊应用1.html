@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊应用1</title>
+    <style>
+        .outer{
+            height: 500px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .inner{
+            font-size: 20px;
+            background-color: red;
+            border: 5px black solid;
+            padding: 5px;
+            position: absolute;
+            left: 50px;
+            right: 50px;
+            /* top: 0;
+            bottom: 0; */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">内部字体</div>
+    </div>
+</body>
+</html>

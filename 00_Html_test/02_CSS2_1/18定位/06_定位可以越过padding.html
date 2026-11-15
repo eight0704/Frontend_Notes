@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位可以越过padding</title>
+    <style>
+        .outer{
+            width: 500px;
+            height: 500px;
+            border: 10px black solid;
+            padding: 10px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .inner{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">内部</div>
+    </div>
+</body>
+</html>
