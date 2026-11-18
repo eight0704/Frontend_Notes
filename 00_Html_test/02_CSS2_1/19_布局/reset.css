@@ -1,0 +1,122 @@
+/* =========================================
+   reset.css —— 重置浏览器默认样式
+   ========================================= */
+
+/* 1. 盒模型统一：宽高包含 padding 和 border */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. 清除常见元素的默认 margin / padding */
+html,
+body,
+div,
+span,
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+pre,
+a,
+em, strong, small, sub, sup,
+img,
+ul, ol, li,
+dl, dt, dd,
+table, caption, tbody, tfoot, thead, tr, th, td,
+form, fieldset, legend, label,
+article, aside, figure, figcaption,
+header, footer, nav, section, main {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. 基础排版 */
+html {
+    -webkit-text-size-adjust: 100%;  /* 防止 iOS 横屏时字号被放大 */
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 4. 标题：去掉默认字号和加粗（想保留标题样式可删掉这一段） */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* 5. 列表：去掉小圆点和缩进（需要项目符号时删掉本段） */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 6. 链接 */
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+/* 7. 图片与媒体元素 */
+img,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    border-style: none;  /* 兼容老版本 IE */
+    height: auto;
+}
+
+/* 8. 表单元素继承页面字体 */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;    /* 只允许上下拖动 */
+    overflow: auto;
+}
+
+/* 9. 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 10. 其他细节 */
+fieldset {
+    border: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+[hidden] {
+    display: none !important;
+}
